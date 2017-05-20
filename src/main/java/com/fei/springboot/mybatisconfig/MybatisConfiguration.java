@@ -38,7 +38,7 @@ import com.github.pagehelper.PageHelper;
 @AutoConfigureAfter(DatasourceConfig.class)
 @ConfigurationProperties
 @EnableTransactionManagement
-@MapperScan("com.fei.springboot.dao")
+//@MapperScan("com.fei.springboot.dao")
 public class MybatisConfiguration implements TransactionManagementConfigurer{
 
 	private static Log logger = LogFactory.getLog(MybatisConfiguration.class);

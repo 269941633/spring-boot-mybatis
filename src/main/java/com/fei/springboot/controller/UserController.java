@@ -14,9 +14,6 @@ import com.github.pagehelper.PageInfo;
 @RequestMapping("/user")
 public class UserController {
 
-	@Value("${mybatis.typeAliasesPackage}")
-//	@Value("${server.port}")
-	private String mybatisTypeAliasesPackage;
 	
 	@Autowired
 	private UserService userService;
@@ -24,7 +21,6 @@ public class UserController {
 	@RequestMapping("/hello")
 	@ResponseBody
 	public String hello(){
-		System.out.println("mybatis.typeAliasesPackage=" + mybatisTypeAliasesPackage);
 		return "hello";
 	}
 	/**

@@ -71,7 +71,7 @@ public class DatasourceConfig {
     
 	
     @Bean(name="dataSource",destroyMethod = "close", initMethod="init")
-    @Primary
+    @Primary //不要漏了这
     public DataSource dataSource(){  
         DruidDataSource datasource = new DruidDataSource();  
         try {  
